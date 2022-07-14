@@ -8,7 +8,7 @@ import cv2
 
 parser = argparse.ArgumentParser(description="Track objects in a video.")
 parser.add_argument("--source", type=str, nargs="+", help="Paths to the files to be processed")
-parser.add_argument("--weights", type=str, default="yolov5m6.pt", help="YOLOv5 models path")
+parser.add_argument("--weights", type=str, default="trained_models/finetuning/weights/best.pt", help="YOLOv5 models path")
 parser.add_argument("--img-size", type=int, default="720", help="YOLOv5 inference size (pixels)")
 parser.add_argument("--conf-thres", type=float, default="0.5", help="YOLOv5 object confidence threshold")
 parser.add_argument("--iou-thresh", type=float, default="0.45", help="YOLOv5 IOU threshold for NMS")

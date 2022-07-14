@@ -9,6 +9,11 @@ pip install -r requirements.txt
 ```
 
 ## Inference with demo.py
+### Get trained model
+Create directory `trained_models` in the root directory.
+Download trained model and put to this directory.
+
+### Inference
 Demo.py runs inference on videos and optionally save results to the specified file.
 ```bash
 python demo.py --source path/to/video/file --weights path/to/yolov5/model
